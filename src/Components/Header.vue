@@ -1,6 +1,8 @@
 <template>
   <header>
-    <img src="../Assets/images/logo.png" alt="logo" class="logo" />
+    <router-link to="/" class="logo-link">
+      <img src="../Assets/images/logo.png" alt="logo" class="logo" />
+    </router-link>
   </header>
 </template>
 <style scoped>
@@ -13,8 +15,12 @@ header {
   align-items: center;
 }
 
-.logo {
+.logo-link {
+  margin: 0 20px;
   height: 80%;
-  margin: 10px;
+}
+
+.logo {
+  height: 100%;
 }
 </style>
