@@ -35,6 +35,12 @@ h1 {
   border-radius: 10px;
   display: flex;
   column-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.description .markdown {
+  max-width: 400px;
 }
 
 .product-image img {
