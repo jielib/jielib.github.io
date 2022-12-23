@@ -3,7 +3,7 @@
     <h1>{{ name }}</h1>
     <div class="description">
       <div class="product-image"><img :src="`/products-images/${images[0]}`" /></div>
-      <div>{{ description }}</div>
+      <Markdown :source="description" />
     </div>
     <ul>
       <li v-for="(value, key) in info">
@@ -16,8 +16,12 @@
 </template>
 
 <script>
+import Markdown from './Markdown.vue';
 export default {
-  props: ['name', 'images', 'description', 'info']
+  props: ['name', 'images', 'description', 'info'],
+  components: {
+    Markdown
+  }
 };
 </script>
 
