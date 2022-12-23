@@ -28,7 +28,7 @@ aside {
   justify-self: center;
   margin: 25px auto;
   position: sticky;
-  top: 25px;
+  top: 125px;
   font-size: 1rem;
 }
 
