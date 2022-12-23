@@ -8,8 +8,12 @@
       <span></span>
       <span></span>
     </div>
+    <nav class="nav">
+      <router-link to="/products">產品資訊</router-link>
+      <router-link to="/contact">聯絡我們</router-link>
+    </nav>
     <div class="bg" v-if="navAct" @click="() => (navAct = false)"></div>
-    <nav :class="navAct ? 'active' : ''">
+    <nav :class="navAct ? 'mobile active' : 'mobile'">
       <ul>
         <li><router-link to="/contact" @click="navClick">聯絡我們</router-link></li>
         <li><router-link to="/products" @click="navClick">產品資訊</router-link></li>
@@ -71,7 +75,15 @@ a {
   height: 100%;
 }
 
-nav {
+nav.nav {
+  margin: 0 20px;
+}
+
+nav.nav a {
+  margin: 0 10px;
+}
+
+nav.mobile {
   position: fixed;
   right: -300px;
   top: 80px;
@@ -85,11 +97,11 @@ nav.active {
   right: 20px;
 }
 
-nav li {
+nav.mobile li {
   padding: 3px 0;
 }
 
-nav > ul {
+nav.mobile > ul {
   list-style: none;
   padding: 0;
 }
@@ -122,14 +134,20 @@ nav > ul {
 }
 
 @media screen and (min-width: 801px) {
-  nav {
+  nav.mobile {
     display: none;
+  }
+  nav.nav {
+    display: block;
   }
 }
 
 @media screen and (max-width: 800px) {
   .hamburger {
     display: flex;
+  }
+  nav.nav {
+    display: none;
   }
 }
 </style>
