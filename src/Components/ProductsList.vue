@@ -25,6 +25,13 @@ export default {
 
 <style scoped>
 article {
-  max-width: 750px;
+  width: 750px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  article {
+    width: 95%;
+  }
 }
 </style>

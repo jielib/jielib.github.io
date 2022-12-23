@@ -29,10 +29,11 @@ aside {
   margin: 25px auto;
   position: sticky;
   top: 25px;
+  font-size: 1rem;
 }
 
 span {
-  font-size: 1rem;
+  font-size: 1em;
   color: #9d008d;
   font-weight: bold;
   opacity: 0.75;
@@ -41,6 +42,24 @@ span {
 a {
   color: inherit;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 1000px) {
+  aside {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  aside {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  aside {
+    display: none;
+  }
 }
 </style>

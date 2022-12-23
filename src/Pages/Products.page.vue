@@ -15,4 +15,17 @@ import ProductsList from '../Components/ProductsList.vue';
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
+
+@media screen and (max-width: 1200px) {
+  #products-page-container {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #products-page-container {
+    grid-template-columns: 1fr;
+    width: 90vw;
+  }
+}
 </style>
