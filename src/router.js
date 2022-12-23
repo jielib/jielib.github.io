@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 // Pages
 import Welcome from './Pages/Welcome.page.vue';
+import Products from './Pages/Products.page.vue';
 
 export default createRouter({
   history: createWebHistory(),
@@ -9,6 +10,10 @@ export default createRouter({
     {
       path: '/',
       component: Welcome
+    },
+    {
+      path: '/products',
+      component: Products
     }
   ]
 });
