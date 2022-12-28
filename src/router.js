@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 // Pages
 import Welcome from './Pages/Welcome.page.vue';
 import Products from './Pages/Products.page.vue';
+import Contact from './Pages/Contact.page.vue';
 
 export default createRouter({
   history: createWebHistory(),
@@ -15,6 +16,10 @@ export default createRouter({
       name: 'products',
       path: '/products',
       component: Products
+    },
+    {
+      path: '/contact',
+      component: Contact
     }
   ],
   scrollBehavior(to, from, savedPosition) {
