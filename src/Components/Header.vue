@@ -69,6 +69,8 @@ a {
 .logo-link {
   margin: 0 20px;
   height: 80%;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -148,6 +150,13 @@ nav.mobile > ul {
   }
   nav.nav {
     display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo {
+    height: auto;
+    width: 65vw;
   }
 }
 </style>
