@@ -3,6 +3,7 @@
     <h1>歡迎來到喆麗生技</h1>
     <nav>
       <router-link to="/products">產品資訊</router-link>
+      <router-link to="/about">關於我們</router-link>
       <router-link to="/contact">聯絡我們</router-link>
     </nav>
   </main>

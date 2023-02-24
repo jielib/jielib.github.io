@@ -10,12 +10,14 @@
     </div>
     <nav class="nav">
       <router-link to="/products">產品資訊</router-link>
+      <router-link to="/about">關於我們</router-link>
       <router-link to="/contact">聯絡我們</router-link>
     </nav>
     <div class="bg" v-if="navAct" @click="() => (navAct = false)"></div>
     <nav :class="navAct ? 'mobile active' : 'mobile'">
       <ul>
         <li><router-link to="/contact" @click="navClick">聯絡我們</router-link></li>
+        <li><router-link to="/about" @click="navClick">關於我們</router-link></li>
         <li><router-link to="/products" @click="navClick">產品資訊</router-link></li>
         <ul>
           <li v-for="i in list">
