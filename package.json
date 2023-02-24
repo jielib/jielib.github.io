@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "rm -rf ./dist && yarn build && cd dist && git init && git add . && git commit -m \"gh-page\" && git push -f git@github.com:jielib/jielib.github.io.git main:gh-page"
   },
   "dependencies": {
     "vue": "^3.2.41",
