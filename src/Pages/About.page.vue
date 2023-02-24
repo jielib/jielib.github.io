@@ -12,7 +12,7 @@
     </p>
   </section>
   <section>
-    <video autoplay loop controls>
+    <video controls>
       <source src="../Assets/939ab7c0-b47b-4e5f-86a3-e46f95baf2a0.mp4" />
     </video>
   </section>
